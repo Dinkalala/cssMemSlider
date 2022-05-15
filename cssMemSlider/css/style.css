@@ -74,7 +74,7 @@ input[name="radioButton"] {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
+  height: 2rem;
 }
 
 .text-container {
@@ -87,7 +87,7 @@ input[name="radioButton"] {
 }
 
 .text {
-  
+
   color: azure;
   font-size: 1.2rem;
   width: 20%;
@@ -245,24 +245,31 @@ input[name="radioButton"] {
 
 @keyframes check {
   0% {}
+
   50% {
     width: 0.1rem;
     height: 0.1rem;
   }
+
   100% {}
 }
 
 @media (max-width: 700px) {
+
+  .slider {
+    width: 70%;
+  }
+
   .slider__controls {
-    height: 8rem;
-    margin-top: 0.2rem;
+    height: 6rem;
+    margin-top: 0.1rem;
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
   }
 
   .navigation {
-    width: 50%;
+    width: 65%;
     height: 3.5rem;
     justify-content: space-evenly;
     align-items: center;
@@ -284,7 +291,7 @@ input[name="radioButton"] {
   }
 
   .main-text {
-    min-width: 70%;
+    min-width: 50%;
   }
 
   #radio2:checked~.slider__wrapper .slider__controls .text-container .second-text {
@@ -294,16 +301,22 @@ input[name="radioButton"] {
 
   #radio3:checked~.slider__wrapper .slider__controls .text-container .third-text {
     min-width: 70%;
-    margin-left: -30%;
+    margin-left: -10%;
   }
 
   #radio4:checked~.slider__wrapper .slider__controls .text-container .fourth-text {
     min-width: 70%;
-    margin-left: -45%;
+    margin-left: -26%;
   }
 
   #radio5:checked~.slider__wrapper .slider__controls .text-container .fourth-text {
     width: 50%;
-    margin-left: -160%;
+    margin-left: -139%;
+  }
+}
+
+@media (max-width: 540px) {
+  .text {
+    font-size: 0.8rem;
   }
 }
