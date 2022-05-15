@@ -228,6 +228,7 @@ input[name="radioButton"] {
 #radio3:checked~.slider__wrapper .slider__controls .text-container .third-text,
 #radio4:checked~.slider__wrapper .slider__controls .text-container .fourth-text,
 #radio5:checked~.slider__wrapper .slider__controls .text-container .fifth-text {
+  width: 100%;
   visibility: visible;
   opacity: 1;
 }
@@ -249,4 +250,59 @@ input[name="radioButton"] {
     height: 0.1rem;
   }
   100% {}
+}
+
+@media (max-width: 700px) {
+  .slider__controls {
+    height: 8rem;
+    margin-top: 0.2rem;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation {
+    width: 50%;
+    height: 3.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 0.1rem;
+  }
+
+  .slice {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .text-container {
+    width: 100%;
+  }
+
+  .text {
+    font-size: 1rem;
+    width: 20%;
+  }
+
+  .main-text {
+    min-width: 70%;
+  }
+
+  #radio2:checked~.slider__wrapper .slider__controls .text-container .second-text {
+    min-width: 70%;
+    margin-left: 20%;
+  }
+
+  #radio3:checked~.slider__wrapper .slider__controls .text-container .third-text {
+    min-width: 70%;
+    margin-left: -30%;
+  }
+
+  #radio4:checked~.slider__wrapper .slider__controls .text-container .fourth-text {
+    min-width: 70%;
+    margin-left: -50%;
+  }
+
+  #radio5:checked~.slider__wrapper .slider__controls .text-container .fourth-text {
+    width: 50%;
+  }
 }
