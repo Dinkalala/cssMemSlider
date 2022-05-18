@@ -162,6 +162,31 @@ input[name="radioButton"] {
   background-color: whitesmoke;
 }
 
+#radio1:active~.slider__wrapper .slider__controls .navigation .btn1 .bar {
+  border: 0.2rem solid rgb(228, 247, 124);
+  background-color: rgb(245, 31, 131);
+}
+
+#radio2:active~.slider__wrapper .slider__controls .navigation .btn2 .bar {
+  border: 0.2rem solid rgb(228, 247, 124);
+  background-color: rgb(245, 31, 131);
+}
+
+#radio3:active~.slider__wrapper .slider__controls .navigation .btn3 .bar {
+  border: 0.2rem solid rgb(228, 247, 124);
+  background-color: rgb(245, 31, 131);
+}
+
+#radio4:active~.slider__wrapper .slider__controls .navigation .btn4 .bar {
+  border: 0.2rem solid rgb(228, 247, 124);
+  background-color: rgb(245, 31, 131);
+}
+
+#radio5:active~.slider__wrapper .slider__controls .navigation .btn5 .bar {
+  border: 0.2rem solid rgb(228, 247, 124);
+  background-color: rgb(245, 31, 131);;
+}
+
 #radio1:checked~.slider__wrapper .sliders .sliders__content .main-slide,
 #radio1:checked~.slider__wrapper .slider__controls .text-container .main-text {
   margin-left: 0%;
