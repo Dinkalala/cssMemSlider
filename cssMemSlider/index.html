@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>cssMemSlider</title>
+  </head>
+  <body>
+    <div class="slider">
+      <input type="radio" name="radioButton" id="radio1" checked />
+      <input type="radio" name="radioButton" id="radio2" />
+      <input type="radio" name="radioButton" id="radio3" />
+      <input type="radio" name="radioButton" id="radio4" />
+      <input type="radio" name="radioButton" id="radio5" />
+
+      <div class="slider__wrapper">
+        <div class="sliders">
+          <div class="sliders__content">
+            <div class="slide main-slide">
+              <img class="slide__image" src="./img/1.jpeg" alt="image" />
+            </div>
+            <div class="slide">
+              <img class="slide__image" loading="lazy" src="./img/2.jpg" alt="image"/>
+            </div>
+            <div class="slide">
+              <img class="slide__image" loading="lazy" src="./img/3.jpg" alt="image"/>
+            </div>
+            <div class="slide">
+              <img class="slide__image" loading="lazy" src="./img/4.jpeg" alt="image"/>
+            </div>
+            <div class="slide">
+              <img class="slide__image" loading="lazy" src="./img/5.jpeg" alt="image"/>
+            </div>
+          </div>
+        </div>
+        <div class="slider__controls">
+          <div class="text-container">
+            <div class="text main-text first-text">Первое правило!</div>
+            <div class="text second-text">Скромная просьба :)</div>
+            <div class="text third-text">Не скромная просьба :)</div>
+            <div class="text fourth-text">ТЫЖ программист!</div>
+            <div class="text fifth-text">WINDOWS 911</div>
+          </div>
+          <div class="navigation">
+            <label for="radio1" class="slice btn1" tabindex="1">
+              <span class="bar"></span>
+            </label>
+            <label for="radio2" class="slice btn2" tabindex="2">
+              <span class="bar"></span>
+            </label>
+            <label for="radio3" class="slice btn3" tabindex="3">
+              <span class="bar"></span>
+            </label>
+            <label for="radio4" class="slice btn4" tabindex="4">
+              <span class="bar"></span>
+            </label>
+            <label for="radio5" class="slice btn5" tabindex="5">
+              <span class="bar"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
